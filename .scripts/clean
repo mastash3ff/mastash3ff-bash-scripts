@@ -1,7 +1,10 @@
 #!/bin/sh
 
-rm $1/*~
-rm $1/*.o
-rm $1/*.x
-rm $1/core.*
+#clean temporary and build files.
+
+rm -fv $1/*~
+rm -fv $1/#*#
+rm -fv $1/*.o
+rm -fv $1/*.x
+rm -fv $1/core.*
 
